@@ -6,7 +6,7 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 :mailbox: Reach me out!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Andres_Moreno-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](www.linkedin.com/in/andres-moreno-jf) [![Mail Badge](https://img.shields.io/badge/-andresmorenojf-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:andresmorenojf@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Andres_Moreno-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andres-moreno-jf/) [![Mail Badge](https://img.shields.io/badge/-andresmorenojf-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:andresmorenojf@gmail.com)
 
 - 🔭 I am currently preparing professionally with the **Platzi Master program**, a program specialized in providing personalized training to each person for their ideal professional profile in the area of technology.
 - 👨‍💻 I like to tutor to help people improve their software development skills.
@@ -19,14 +19,13 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 [![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#) [![Javascript Badge](https://img.shields.io/badge/-Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)](#) [![Nodejs Badge](https://img.shields.io/badge/-Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)](#) [![Redux Badge](https://img.shields.io/badge/-Redux-764abc?style=for-the-badge&labelColor=black&logo=redux&logoColor=764abc)](#) [![Sass Badge](https://img.shields.io/badge/-Sass-c56494?style=for-the-badge&labelColor=black&logo=sass&logoColor=c56494)](#) [![Git Badge](https://img.shields.io/badge/-Git-e94e31?style=for-the-badge&labelColor=black&logo=git&logoColor=e94e31)](#) [![Vercel Badge](https://img.shields.io/badge/-Vercel-fff?style=for-the-badge&labelColor=black&logo=vercel&logoColor=fff)](#)
 
 #### Have a look at my CV
-- :paperclip: [My Resume/CV]()
-
-#### Coding Stats
-
-<!--START_SECTION:waka-->
-
-<!--END_SECTION:waka-->
+- :paperclip: [My Resume/CV](https://github.com/andresmorenoj/andresmorenoj/blob/master/CV/CV_Andr%C3%A9s-Moreno.pdf)
 
 #### Github Stats
 
 ![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=andresmorenoj&count_private=true&theme=tokyonight)
+
+#### Coding Stats
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
