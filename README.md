@@ -10,7 +10,7 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 - 🔭 I am currently preparing professionally with the **Platzi Master program**, a program specialized in providing personalized training to each person for their ideal professional profile in the area of technology.
 - 👨‍💻 I like to tutor to help people improve their software development skills.
-- ⚡ **Fun fact:** I like to play games, listen to music and cook..
+- ⚡ **Fun fact:** I like to play games, listen to music and cook.
 
 #### Top Technologies
 
