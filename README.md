@@ -23,7 +23,7 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 #### Github Stats
 
-![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=andresmorenoj&count_private=true&theme=tokyonight)
+![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=andresmorenoj&count_private=true&theme=tokyonight&show_icons=true&hide=stars)
 
 #### Coding Stats
 
