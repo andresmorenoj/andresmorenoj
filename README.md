@@ -29,7 +29,10 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 <!--START_SECTION:waka-->
 ```text
-Markdown   1 hr 34 mins    ████████████████████████▒   97.91 % 
-YAML       2 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.09 % 
+Markdown   1 hr 34 mins    ████████████▓░░░░░░░░░░░░   50.04 % 
+HTML       1 hr 27 mins    ███████████▓░░░░░░░░░░░░░   46.71 % 
+XML        2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.17 % 
+YAML       2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.07 % 
+Other      1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.01 % 
 ```
 <!--END_SECTION:waka-->
