@@ -25,7 +25,7 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 ![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=andresmorenoj&count_private=true&theme=tokyonight&show_icons=true&hide=stars)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andresmorenoj&layout=compact&theme=dracula)](https://github.com/andresmorenoj/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andresmorenoj&layout=compact&theme=tokyonight)](https://github.com/andresmorenoj/github-readme-stats)
 
 #### WakaTime Coding Stats
 
