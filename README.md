@@ -21,11 +21,13 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 #### Have a look at my CV
 - :paperclip: [My Resume/CV](https://github.com/andresmorenoj/andresmorenoj/blob/master/CV/CV_Andr%C3%A9s-Moreno.pdf)
 
-#### Github Stats
+#### GitHub Coding Stats
 
 ![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=andresmorenoj&count_private=true&theme=tokyonight&show_icons=true&hide=stars)
 
-#### Coding Stats
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andresmorenoj&layout=compact&theme=dracula)](https://github.com/andresmorenoj/github-readme-stats)
+
+#### WakaTime Coding Stats
 
 <!--START_SECTION:waka-->
 ```text
