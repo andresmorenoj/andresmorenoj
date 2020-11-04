@@ -31,6 +31,10 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 <!--START_SECTION:waka-->
 ```text
-No Activity tracked this Week
+JSX          3 hrs 13 mins   ██████████▓░░░░░░░░░░░░░░   42.57 % 
+JavaScript   1 hr 57 mins    ██████▒░░░░░░░░░░░░░░░░░░   25.91 % 
+HTML         1 hr 27 mins    ████▓░░░░░░░░░░░░░░░░░░░░   19.31 % 
+JSON         36 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   08.01 % 
+SCSS         8 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.88 % 
 ```
 <!--END_SECTION:waka-->
