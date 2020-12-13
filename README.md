@@ -31,10 +31,9 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 <!--START_SECTION:waka-->
 ```text
-JSX          54 mins         ████████░░░░░░░░░░░░░░░░░   31.63 % 
-JavaScript   35 mins         █████░░░░░░░░░░░░░░░░░░░░   20.39 % 
-Bash         30 mins         ████▒░░░░░░░░░░░░░░░░░░░░   17.84 % 
-JSON         20 mins         ███░░░░░░░░░░░░░░░░░░░░░░   12.21 % 
-Git Config   12 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   07.19 % 
+JSX          35 mins         ██████████▒░░░░░░░░░░░░░░   41.95 % 
+Bash         30 mins         █████████░░░░░░░░░░░░░░░░   36.60 % 
+JavaScript   11 mins         ███▒░░░░░░░░░░░░░░░░░░░░░   13.99 % 
+Git Config   6 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   07.35 % 
 ```
 <!--END_SECTION:waka-->
