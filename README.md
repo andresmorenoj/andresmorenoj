@@ -31,10 +31,8 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 <!--START_SECTION:waka-->
 ```text
-TypeScript   11 hrs 13 mins  ███████████████████▒░░░░░   77.14 % 
-JSX          1 hr 51 mins    ███▒░░░░░░░░░░░░░░░░░░░░░   12.72 % 
-CSS          47 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.45 % 
-JSON         30 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 % 
-HTML         8 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.97 % 
+TypeScript   11 hrs 13 mins  ████████████████████████░   95.42 % 
+JSON         30 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.25 % 
+JavaScript   1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.23 % 
 ```
 <!--END_SECTION:waka-->
