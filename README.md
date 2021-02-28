@@ -31,6 +31,6 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 
 <!--START_SECTION:waka-->
 ```text
-TypeScript   4 hrs 2 mins    █████████████████████████   99.40 % 
+TypeScript   1 hr 45 mins    ████████████████████████▓   98.65 % 
 ```
 <!--END_SECTION:waka-->
