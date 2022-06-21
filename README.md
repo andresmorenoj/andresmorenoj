@@ -19,7 +19,7 @@ I enjoy all aspects of learning and especially doing new and challenging things.
 [![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#) [![Javascript Badge](https://img.shields.io/badge/-Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)](#) [![TypeScript Badge](https://img.shields.io/badge/-Typescript-61DBFB?style=for-the-badge&labelColor=black&logo=typescript&logoColor=61DBFB)](#) [![Nodejs Badge](https://img.shields.io/badge/-Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)](#) [![Redux Badge](https://img.shields.io/badge/-Redux-764abc?style=for-the-badge&labelColor=black&logo=redux&logoColor=764abc)](#) [![Sass Badge](https://img.shields.io/badge/-Sass-c56494?style=for-the-badge&labelColor=black&logo=sass&logoColor=c56494)](#) [![Git Badge](https://img.shields.io/badge/-Git-e94e31?style=for-the-badge&labelColor=black&logo=git&logoColor=e94e31)](#) [![Vercel Badge](https://img.shields.io/badge/-Vercel-fff?style=for-the-badge&labelColor=black&logo=vercel&logoColor=fff)](#)
 
 #### Have a look at my CV
-- :paperclip: [My Resume/CV](https://github.com/andresmorenoj/andresmorenoj/blob/master/CV/CV_Andr%C3%A9s-Moreno.pdf)
+- :paperclip: [My Resume/CV](https://github.com/andresmorenoj/andresmorenoj/blob/master/CV/Andr%C3%A9s_Moreno_CV.pdf)
 
 #### GitHub Coding Stats
 
