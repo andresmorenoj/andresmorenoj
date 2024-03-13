@@ -1,6 +1,6 @@
 ## Hi, I'm Andrés Moreno <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi">
 #### Frontend Developer.
-![Visitors](https://visitor-badge.glitch.me/badge?page_id=andresmorenoj.andresmorenoj) ![Followers](https://img.shields.io/github/followers/andresmorenoj?label=Followers&style=social) 
+![Followers](https://img.shields.io/github/followers/andresmorenoj?label=Followers&style=social) 
 
 I enjoy all aspects of learning and especially doing new and challenging things. In my work I am used to being responsible and responsive to the changing needs of the work place. It is my nature to always give the best in every professional endeavour I take on.
 
