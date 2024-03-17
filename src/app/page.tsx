@@ -1,11 +1,15 @@
-"use client"
+"use client";
 
 import { NewComponent } from "@components/atoms";
+import dynamic from "next/dynamic";
 
+const AppThemeProvider = dynamic(() => import("@theme/theme.provider"));
 export default function Home() {
   return (
-    <main>
-     <NewComponent/>
-    </main>
+    <AppThemeProvider>
+      <main>
+        <NewComponent />
+      </main>
+    </AppThemeProvider>
   );
 }
