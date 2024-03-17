@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const StyledNewComponentContainer = styled.div(() => {
+export const StyledNewComponentContainer = styled.div(({theme}) => {
 	return css`
 		width: 500px;
 		height: 200px;
@@ -8,6 +8,10 @@ export const StyledNewComponentContainer = styled.div(() => {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: yellow;
+		color: ${theme.colors.primary.neutralWhite};
+		
+		h1 {
+			font-weight: ${theme.typography.weights.normal}
+		}
 	`;
 })
