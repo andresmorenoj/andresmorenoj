@@ -64,6 +64,7 @@ export const GlobalStyles = createGlobalStyle(
 
     a {
       background-color: transparent;
+      text-decoration: none;
     }
 
     /**
