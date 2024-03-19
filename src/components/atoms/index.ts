@@ -1,1 +1,1 @@
-export * from './newComponent/NewComponent';
+export * from './MenuItem/MenuItem.component'
