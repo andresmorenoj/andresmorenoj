@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { withFlexContentCentered } from "@theme/baseTheme/mixins";
 
-export const StyledHeader = styled.header(({ theme }) => {
+export const StyledNavList = styled.ul(({ theme }) => {
 	return css`
 		width: 100%;
 		height: 100px;
