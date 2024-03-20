@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { Header } from "@components/organisms";
 import { TextsContentContainer } from "@components/molecules";
-import { Heading, Text } from "@components/atoms";
+import { Heading, Text, ImageFigure } from "@components/atoms";
 import { contentData } from "@constants/index";
 
 const AppThemeProvider = dynamic(() => import("@theme/theme.provider"));
@@ -30,6 +30,7 @@ export default function Home() {
             </p>
           }
         />
+        <ImageFigure width={100}/>
       </main>
     </AppThemeProvider>
   );
