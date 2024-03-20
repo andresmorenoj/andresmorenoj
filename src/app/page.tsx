@@ -2,15 +2,17 @@
 
 import dynamic from "next/dynamic";
 import { Header } from "@components/organisms";
-import { Heading } from '@components/atoms'
+import { Heading, Text } from "@components/atoms";
 
 const AppThemeProvider = dynamic(() => import("@theme/theme.provider"));
 export default function Home() {
   return (
     <AppThemeProvider>
-      <Header/>
+      <Header />
       <main>
-        <Heading level={5} size="extraJumbo" fontWeight="normal" >Hello world!</Heading>
+        <Heading level={5} size="extraJumbo" fontWeight="extraBold">
+          <Text variant="outline">Hello world!</Text>
+        </Heading>
       </main>
     </AppThemeProvider>
   );
