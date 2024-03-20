@@ -10,7 +10,7 @@ export default function Home() {
     <AppThemeProvider>
       <Header/>
       <main>
-        <Heading level={5} size="extraJumbo" weight="normal" >Hello world!</Heading>
+        <Heading level={5} size="extraJumbo" fontWeight="normal" >Hello world!</Heading>
       </main>
     </AppThemeProvider>
   );
