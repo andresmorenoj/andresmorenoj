@@ -9,6 +9,7 @@ const styledHeading = (
   font-size: ${theme.typography.sizes[size]};
   font-weight: ${theme.typography.weights[weight]};
 `;
+
 export const StyledH1 = styled.h1<IHeading>(
   ({ theme, size, weight }) => css`
     ${styledHeading(theme, { size, weight })}
