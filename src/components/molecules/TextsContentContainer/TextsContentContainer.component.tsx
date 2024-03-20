@@ -1,20 +1,23 @@
-type TTextsContentVariant = 'black' | 'white'
+import { StyledContainer } from "./TextsContentContainer.styled";
+
+type TTextsContentVariant = "black" | "white";
 
 export interface ITextsContent {
-  title: string;
-  description: string;
-	variant: TTextsContentVariant
+  title: React.ReactNode | string;
+  description: React.ReactNode | string;
+  variant: TTextsContentVariant;
 }
 
 export const TextsContentContainer: React.FC<ITextsContent> = ({
   title,
   description,
-	variant
+  variant,
 }) => {
+  
   return (
-    <div>
+    <StyledContainer variant={variant}>
       {title}
-      <p>{description}</p>
-    </div>
+      {description}
+    </StyledContainer>
   );
 };

@@ -5,15 +5,15 @@ const styledTextVariant = (theme: DefaultTheme, variant: TTextVariant) => {
   switch (variant) {
     case "normal":
       return css`
-        text-weight: ${theme.typography.weights.normal};
+        font-weight: ${theme.typography.weights.thin};
       `;
     case "semiBold":
       return css`
-        text-weight: ${theme.typography.weights.bold};
+        font-weight: ${theme.typography.weights.bold};
       `;
     case "bold":
       return css`
-        text-weight: ${theme.typography.weights.extraBold};
+        font-weight: ${theme.typography.weights.extraBold};
       `;
     case "outline":
       return css`
@@ -25,7 +25,7 @@ const styledTextVariant = (theme: DefaultTheme, variant: TTextVariant) => {
       `;
     default:
       return css`
-        text-weight: ${theme.typography.weights.normal};
+        font-weight: ${theme.typography.weights.normal};
       `;
   }
 };

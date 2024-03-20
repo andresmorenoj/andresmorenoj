@@ -49,6 +49,10 @@ export const GlobalStyles = createGlobalStyle(
     h5,
     h6 {
       margin: 0;
+    };
+    
+    p {
+      margin: 0;
     }
 
     ul {

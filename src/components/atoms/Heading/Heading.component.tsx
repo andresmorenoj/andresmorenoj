@@ -26,6 +26,7 @@ export interface IHeading extends HTMLAttributes<HTMLHeadingElement> {
   level: THeadingLevel;
   fontWeight: THeadingWeight;
   size: THeadingSize;
+  className?: string;
 }
 
 const variants: Record<THeadingLevel, React.FC<Omit<IHeading, "level">>> = {
@@ -41,11 +42,12 @@ export const Heading: React.FC<IHeading> = ({
   level,
   size,
   fontWeight,
+  className,
   children,
 }) => {
   const Component = variants[level];
   return (
-    <Component size={size} fontWeight={fontWeight}>
+    <Component className={className} size={size} fontWeight={fontWeight}>
       {children}
     </Component>
   );
