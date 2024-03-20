@@ -21,7 +21,6 @@ export const ImageFigure: React.FC<IImage> = ({ width }) => {
 				style={{
 					width: "100%",
 					height: "auto",
-					objectFit: 'contain',
 				}}
 			/>
 		</StyledImageContainer>

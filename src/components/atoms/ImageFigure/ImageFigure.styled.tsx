@@ -8,6 +8,7 @@ export const StyledImageContainer = styled.figure<IImage>(
 	margin: 0;
 	padding: 0;
 	width: ${width.toString()}%;
+	max-width: 420px;
 	height: auto;
 `
 );
