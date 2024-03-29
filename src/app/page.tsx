@@ -1,14 +1,15 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Header } from "@components/organisms";
+import { Header, IntroductionSection } from "@components/organisms";
 
 const AppThemeProvider = dynamic(() => import("@theme/theme.provider"));
 export default function Home() {
   return (
     <AppThemeProvider>
-      <Header/>
+      <Header />
       <main>
+        <IntroductionSection/>
       </main>
     </AppThemeProvider>
   );
