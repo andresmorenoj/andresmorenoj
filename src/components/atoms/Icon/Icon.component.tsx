@@ -1,6 +1,6 @@
 import { IconType, IconContext } from "react-icons";
 
-interface IIcon {
+export interface IIcon {
   iconType: IconType;
   size?: number;
   color?: string;
