@@ -49,8 +49,8 @@ export const GlobalStyles = createGlobalStyle(
     h5,
     h6 {
       margin: 0;
-    };
-    
+    }
+
     p {
       margin: 0;
     }
@@ -71,6 +71,7 @@ export const GlobalStyles = createGlobalStyle(
     a {
       background-color: transparent;
       text-decoration: none;
+      color: unset;
     }
 
     /**
@@ -87,6 +88,15 @@ export const GlobalStyles = createGlobalStyle(
 
     [hidden] {
       display: none;
+    }
+
+    /**
+     * Remove figure margin and padding
+    */
+
+    figure {
+      margin: 0;
+      padding: 0;
     }
   `
 );

@@ -1,11 +1,13 @@
+import { FaAnchorLock } from "react-icons/fa6";
 import { contentData } from "@constants/index";
 
 import { TextsContentContainer } from "@components/molecules";
 import { Heading, Text, ImageFigure } from "@components/atoms";
 
-import { StyledSectionContainer } from "./IntroductionSection.styled";
+import { StyledSectionContainer } from "./HeroBanner.styled";
+import { Contact } from "..";
 
-export const IntroductionSection: React.FC = () => (
+export const HeroBanner: React.FC = () => (
   <StyledSectionContainer>
     <TextsContentContainer
       variant="black"
@@ -17,9 +19,15 @@ export const IntroductionSection: React.FC = () => (
           fontWeight="extraBold"
         >
           <Text variant="normal">{`${contentData.greet.content} `}</Text>
-          <Text variant="semiBold">{`${contentData.name.content}`}<br/></Text>
+          <Text variant="semiBold">
+            {`${contentData.name.content}`}
+            <br />
+          </Text>
           <Text variant="semiBold">{`${contentData.job.content} `}</Text>
-          <Text variant="outline">{`${contentData.job_title.content}`}<br/></Text>
+          <Text variant="outline">
+            {`${contentData.job_title.content} `}
+            <br/>
+          </Text>
           <Text variant="normal">{`${contentData.location.content} `}</Text>
           <Text variant="semiBold">{`${contentData.location_city.content}`}</Text>
         </Heading>
@@ -31,5 +39,7 @@ export const IntroductionSection: React.FC = () => (
       }
     />
     <ImageFigure width={100} />
+    <Contact/>
   </StyledSectionContainer>
 );
+ 
