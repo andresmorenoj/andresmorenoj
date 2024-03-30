@@ -1,8 +1,8 @@
 import { FaAnchorLock } from "react-icons/fa6";
 import { contentData } from "@constants/index";
 
-import { IconCard, TextsContentContainer } from "@components/molecules";
-import { Heading, Text, ImageFigure, Icon } from "@components/atoms";
+import { TextsContentContainer } from "@components/molecules";
+import { Heading, Text, ImageFigure } from "@components/atoms";
 
 import { StyledSectionContainer } from "./IntroductionSection.styled";
 
@@ -37,7 +37,6 @@ export const IntroductionSection: React.FC = () => (
         </p>
       }
     />
-    <IconCard icon={FaAnchorLock} variant="withLabel" label="holaaaa"/>
     <ImageFigure width={100} />
   </StyledSectionContainer>
 );
