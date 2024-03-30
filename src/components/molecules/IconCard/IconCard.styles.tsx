@@ -11,7 +11,7 @@ const variantStyles = (theme: DefaultTheme, variant: TVariant) => {
   if (variant === "default") {
     return css`
       padding: calc(
-        ${theme.measurements.large} - ${theme.measurements.extraExtraSmall}
+        ${theme.measurements.medium} - ${theme.measurements.extraExtraSmall}
       );
     `;
   } else {
@@ -31,7 +31,7 @@ export const StyledWrapper = styled.div<Omit<IIConCard, "icon">>(
     return css`
       ${withFlexContentCentered()};
       ${withBorder(theme.colors.primary.neutralBlack, "2px")};
-      ${withBorderRadius(theme.measurements.small)};
+      ${withBorderRadius(theme.measurements.extraSmall)};
       ${variantStyles(theme, variant)};
     `;
   }

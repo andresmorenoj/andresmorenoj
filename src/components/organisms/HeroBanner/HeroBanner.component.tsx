@@ -5,6 +5,7 @@ import { TextsContentContainer } from "@components/molecules";
 import { Heading, Text, ImageFigure } from "@components/atoms";
 
 import { StyledSectionContainer } from "./HeroBanner.styled";
+import { Contact } from "..";
 
 export const HeroBanner: React.FC = () => (
   <StyledSectionContainer>
@@ -24,8 +25,8 @@ export const HeroBanner: React.FC = () => (
           </Text>
           <Text variant="semiBold">{`${contentData.job.content} `}</Text>
           <Text variant="outline">
-            {`${contentData.job_title.content}`}
-            <br />
+            {`${contentData.job_title.content} `}
+            <br/>
           </Text>
           <Text variant="normal">{`${contentData.location.content} `}</Text>
           <Text variant="semiBold">{`${contentData.location_city.content}`}</Text>
@@ -38,6 +39,7 @@ export const HeroBanner: React.FC = () => (
       }
     />
     <ImageFigure width={100} />
+    <Contact/>
   </StyledSectionContainer>
 );
  
