@@ -4,9 +4,9 @@ import { contentData } from "@constants/index";
 import { TextsContentContainer } from "@components/molecules";
 import { Heading, Text, ImageFigure } from "@components/atoms";
 
-import { StyledSectionContainer } from "./IntroductionSection.styled";
+import { StyledSectionContainer } from "./HeroBanner.styled";
 
-export const IntroductionSection: React.FC = () => (
+export const HeroBanner: React.FC = () => (
   <StyledSectionContainer>
     <TextsContentContainer
       variant="black"
