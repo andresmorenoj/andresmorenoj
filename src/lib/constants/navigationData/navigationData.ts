@@ -23,7 +23,7 @@ type TNavigation = {
 	[key in TValidPageKey]: ISection
 }
 
-export const sectionsList: TNavigation = {
+export const sectionsData: TNavigation = {
 	aboutMe: {
 		label: NAVIGATION.ABOUTME,
 		sectionRef: '#aboutMe'

@@ -16,7 +16,7 @@ export interface IIConCard {
 export const IconCard: React.FC<IIConCard> = ({
   variant = "default",
   icon,
-	label
+	label,
 }) => {
   return (
     <StyledWrapper variant={variant}>

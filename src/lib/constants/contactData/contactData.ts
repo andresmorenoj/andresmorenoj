@@ -21,7 +21,7 @@ type TContact = {
 	[key in TValidPageKey]: IProperties
 }
 
-export const contactList: TContact = {
+export const contactData: TContact = {
 	linkedin: {
 		label: 'LinkedIn',
 		href: CONTACT.LINKEDIN

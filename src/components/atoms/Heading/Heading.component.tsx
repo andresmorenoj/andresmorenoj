@@ -24,8 +24,8 @@ type THeadingSize =
 
 export interface IHeading extends HTMLAttributes<HTMLHeadingElement> {
   level: THeadingLevel;
-  fontWeight: THeadingWeight;
   size: THeadingSize;
+  fontWeight?: THeadingWeight;
   className?: string;
 }
 

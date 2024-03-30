@@ -1,4 +1,3 @@
-import { FaAnchorLock } from "react-icons/fa6";
 import { contentData } from "@constants/index";
 
 import { TextsContentContainer } from "@components/molecules";

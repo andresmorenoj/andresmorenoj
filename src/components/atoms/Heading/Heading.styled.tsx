@@ -7,7 +7,8 @@ const styledHeading = (
   { size, fontWeight }: Omit<IHeading, "level">
 ) => css`
   font-size: ${theme.typography.sizes[size]};
-  font-weight: ${theme.typography.weights[fontWeight]};
+  ${fontWeight && `font-weight: ${theme.typography.weights[fontWeight]}`};
+  width: fit-content;
 `;
 
 export const StyledH1 = styled.h1<IHeading>(

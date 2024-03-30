@@ -1,14 +1,12 @@
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa6";
 
 import { IconAnchor } from "@components/molecules";
-import { contactList } from "@constants/index";
+import { contactData } from "@constants/index";
 
 import { StyledContactContainer } from './Contact.styles';
 
 export const Contact: React.FC = () => {
-  const contactValues = Object.values(contactList);
+  const contactValues = Object.values(contactData);
   const icons = [FaLinkedinIn, FaGithub, FaInstagram];
 
   return (

@@ -1,9 +1,9 @@
-import { sectionsList } from "@constants/index";
+import { sectionsData } from "@constants/index";
 import { MenuItem } from "@components/atoms";
 import { StyledNavList } from "./Header.styled";
 
 export const Header: React.FC = () => {
-  const navigationList = Object.values(sectionsList);
+  const navigationList = Object.values(sectionsData);
   return (
     <header>
       <nav>
