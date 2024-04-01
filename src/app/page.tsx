@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { Header, HeroBanner, MySkills } from "@components/organisms";
+import { ExperienceCard } from "@components/molecules";
 
 const AppThemeProvider = dynamic(() => import("@theme/theme.provider"));
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <main>
         <HeroBanner/>
         <MySkills />
+        <ExperienceCard/>
       </main>
     </AppThemeProvider>
   );

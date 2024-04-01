@@ -1,0 +1,1 @@
+export const ExperienceCard: React.FC = () => <h1>hola</h1>

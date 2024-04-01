@@ -7,7 +7,7 @@ import {
   StyledH4,
   StyledH5,
   StyledH6,
-} from "./Heading.styled";
+} from "./Heading.styles";
 
 type THeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 type THeadingWeight = "normal" | "extraBold";

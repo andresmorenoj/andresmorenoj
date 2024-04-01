@@ -1,5 +1,5 @@
 import { HTMLAttributes } from "react";
-import { StyledText } from "./Text.styled";
+import { StyledText } from "./Text.styles";
 
 export type TTextVariant = "normal" | "bold" | "semiBold" | "outline";
 
