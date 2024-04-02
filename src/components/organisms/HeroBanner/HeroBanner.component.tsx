@@ -3,7 +3,7 @@ import { contentData } from "@constants/index";
 import { TextsContentContainer } from "@components/molecules";
 import { Heading, Text, ImageFigure } from "@components/atoms";
 
-import { StyledSectionContainer } from "./HeroBanner.styled";
+import { StyledSectionContainer } from "./HeroBanner.styles";
 import { Contact } from "..";
 
 export const HeroBanner: React.FC = () => (

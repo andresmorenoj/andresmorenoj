@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { StyledImageContainer } from "./ImageFigure.styled";
+import { StyledImageContainer } from "./ImageFigure.styles";
 
 export interface IImage {
   width: number;

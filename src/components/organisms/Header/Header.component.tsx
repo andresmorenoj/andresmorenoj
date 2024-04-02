@@ -1,6 +1,6 @@
 import { sectionsData } from "@constants/index";
 import { MenuItem } from "@components/atoms";
-import { StyledNavList } from "./Header.styled";
+import { StyledNavList } from "./Header.styles";
 
 export const Header: React.FC = () => {
   const navigationList = Object.values(sectionsData);

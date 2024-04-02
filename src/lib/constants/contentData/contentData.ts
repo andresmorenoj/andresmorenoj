@@ -7,7 +7,8 @@ import {
   INTRODUCTION_LOCATION_CITY,
   INTRODUCTION_DESCRIPTION,
   MY,
-  SKILLS_TITLE
+  SKILLS_TITLE,
+  EXPERIENCE_TITLE
 } from "./contentData.constants";
 
 enum CONTENT {
@@ -20,6 +21,7 @@ enum CONTENT {
   SHORT_DESCRIPTION = INTRODUCTION_DESCRIPTION,
   PRE_MY = MY,
   SKILLS = SKILLS_TITLE,
+  EXPERIENCE = EXPERIENCE_TITLE
 }
 
 const keys = [
@@ -31,7 +33,8 @@ const keys = [
   "location_city",
   "short_description",
   "pre_my",
-  "skills"
+  "skills",
+  "experience"
 ] as const;
 
 type TValidContentKey = (typeof keys)[number];
@@ -71,5 +74,8 @@ export const contentData: TContent = {
   },
   skills: {
     content: CONTENT.SKILLS
+  },
+  experience: {
+    content: CONTENT.EXPERIENCE
   }
 };

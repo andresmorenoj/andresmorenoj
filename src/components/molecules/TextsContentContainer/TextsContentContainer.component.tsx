@@ -1,4 +1,4 @@
-import { StyledContainer } from "./TextsContentContainer.styled";
+import { StyledContainer } from "./TextsContentContainer.styles";
 
 type TTextsContentVariant = "black" | "white";
 
