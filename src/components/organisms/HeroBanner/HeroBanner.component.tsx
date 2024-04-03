@@ -37,7 +37,7 @@ export const HeroBanner: React.FC = () => (
         </p>
       }
     />
-    <ImageFigure width={100} />
+    <ImageFigure src="/images/man.svg" width={100} />
     <Contact/>
   </StyledSectionContainer>
 );

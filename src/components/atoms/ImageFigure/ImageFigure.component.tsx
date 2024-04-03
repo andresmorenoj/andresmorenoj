@@ -3,10 +3,11 @@ import Image from "next/image";
 import { StyledImageContainer } from "./ImageFigure.styles";
 
 export interface IImage {
+	src: string;
   width: number;
 }
 
-export const ImageFigure: React.FC<IImage> = ({ width }) => {
+export const ImageFigure: React.FC<IImage> = ({ src, width }) => {
 
 	const validWidth = width < 0 || width > 100 ? 100 : width;
 
@@ -14,7 +15,7 @@ export const ImageFigure: React.FC<IImage> = ({ width }) => {
 		<StyledImageContainer width={ validWidth }>
 			<Image
 				alt="something"
-				src="/images/man.svg"
+				src={src}
 				sizes="100vw"
 				width={100}
 				height={100}

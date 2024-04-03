@@ -8,7 +8,13 @@ import {
   INTRODUCTION_DESCRIPTION,
   MY,
   SKILLS_TITLE,
-  EXPERIENCE_TITLE
+  EXPERIENCE_TITLE,
+  ABOUT,
+  ME,
+  ABOUT_ME_P1,
+  ABOUT_ME_P2,
+  ABOUT_ME_P3,
+  ABOUT_ME_P4
 } from "./contentData.constants";
 
 enum CONTENT {
@@ -21,7 +27,13 @@ enum CONTENT {
   SHORT_DESCRIPTION = INTRODUCTION_DESCRIPTION,
   PRE_MY = MY,
   SKILLS = SKILLS_TITLE,
-  EXPERIENCE = EXPERIENCE_TITLE
+  EXPERIENCE = EXPERIENCE_TITLE,
+  PRE_ABOUT = ABOUT,
+  POST_ME = ME,
+  ABOUT_ME_1 = ABOUT_ME_P1,
+  ABOUT_ME_2 = ABOUT_ME_P2,
+  ABOUT_ME_3 = ABOUT_ME_P3,
+  ABOUT_ME_4 = ABOUT_ME_P4,
 }
 
 const keys = [
@@ -34,7 +46,13 @@ const keys = [
   "short_description",
   "pre_my",
   "skills",
-  "experience"
+  "pre_about",
+  "post_me",
+  "experience",
+  "about_me_p1",
+  "about_me_p2",
+  "about_me_p3",
+  "about_me_p4"
 ] as const;
 
 type TValidContentKey = (typeof keys)[number];
@@ -77,5 +95,24 @@ export const contentData: TContent = {
   },
   experience: {
     content: CONTENT.EXPERIENCE
-  }
+  },
+  pre_about: {
+    content: CONTENT.PRE_ABOUT
+  },
+  post_me: {
+    content: CONTENT.POST_ME
+  },
+  about_me_p1: {
+    content: CONTENT.ABOUT_ME_1
+  },
+  about_me_p2: {
+    content: CONTENT.ABOUT_ME_2
+  },
+  about_me_p3: {
+    content: CONTENT.ABOUT_ME_3
+  },
+  about_me_p4: {
+    content: CONTENT.ABOUT_ME_4
+  },
+
 };
