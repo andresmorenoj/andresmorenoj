@@ -10,7 +10,8 @@ export type TVariant = "default" | "withLabel";
 export interface IIConCard {
   variant: TVariant;
   icon: IconType;
-	label?: string
+	label?: string;
+  size?: number;
 }
 
 export const IconCard: React.FC<IIConCard> = ({
@@ -18,9 +19,10 @@ export const IconCard: React.FC<IIConCard> = ({
   icon,
 	label,
 }) => {
+
   return (
     <StyledWrapper variant={variant}>
-      <Icon iconType={icon} size={variant === "default" ? 2 : 5} />
+      <Icon iconType={icon} size={variant === "withLabel" ? 5 : 2} />
       <RenderIf when={variant === 'withLabel'}>
         <Text variant="semiBold">{label}</Text>
       </RenderIf>

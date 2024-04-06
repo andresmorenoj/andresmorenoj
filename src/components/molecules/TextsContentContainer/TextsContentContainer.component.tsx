@@ -3,8 +3,8 @@ import { StyledContainer } from "./TextsContentContainer.styles";
 type TTextsContentVariant = "black" | "white";
 
 export interface ITextsContent {
-  title: React.ReactNode | string;
-  description: React.ReactNode | string;
+  title: React.ReactNode;
+  description: React.ReactNode;
   variant: TTextsContentVariant;
 }
 

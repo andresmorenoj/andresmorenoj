@@ -5,6 +5,7 @@ export const StyledContainer = styled.div<Pick<ITextsContent, "variant">>(
   ({ theme, variant }) => css`
     display: flex;
     flex-direction: column;
+    gap: ${theme.measurements.small};
 
     & .container__title {
       line-height: ${theme.measurements.extraExtraLarge};

@@ -1,13 +1,18 @@
 import styled, { css } from "styled-components";
+import { IIconAnchor } from './IconAnchor.component';
 
-export const StyledIconAnchor = styled.a(({ theme }) => {
+export const StyledIconAnchor = styled.a<Pick<IIconAnchor, 'isDarkBackgound'>>(({ theme,  isDarkBackgound}) => {
   return css`
-	&:focus, &:hover {
-		outline: none;
+    width: fit-content;
 
-		div, * {
-			background: ${theme.colors.primary.neutralBlack};
-			color: ${theme.colors.primary.neutralWhite};
-		}
-	`;
+    &:focus,
+    &:hover {
+      outline: none;
+
+      * {
+        ${!isDarkBackgound && `background: ${theme.colors.primary.neutralBlack}`};
+        color: ${theme.colors.primary.neutralWhite};
+      }
+    }
+  `;
 });
