@@ -3,15 +3,24 @@ import { ProjectTextContainer } from "@components/molecules/ProjectTextContainer
 
 import { StyledCardContainer, StyledImageWrapper } from "./ProjectCard.styles";
 
-export const ProjectCard: React.FC = () => (
+interface IProjectCard {
+  indexTitle: string;
+  title: string;
+  description: string;
+  href: string;
+  imgUrl: string;
+}
+
+export const ProjectCard: React.FC<IProjectCard> = ({indexTitle, title, description, href, imgUrl}) => (
   <StyledCardContainer>
     <StyledImageWrapper>
-      <ImageFigure src="/images/gifos.webp" width={100} />
+      <ImageFigure src={imgUrl} width={100} />
     </StyledImageWrapper>
     <ProjectTextContainer
-      index="01"
-      title="project title"
-      description="Project description"
+      index={indexTitle}
+      title={title}
+      description={description}
+      href={href}
     />
   </StyledCardContainer>
 );

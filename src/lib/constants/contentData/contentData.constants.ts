@@ -19,3 +19,4 @@ export const ABOUT_ME_P3 =
   "Collaboration is key. I actively participate in team discussions and enjoy mentoring peers, fostering a positive and growth-oriented environment. Beyond my current skillset, I'm a constant learner, always eager to explore new technologies and approaches.";
 export const ABOUT_ME_P4 =
   "Outside of code, I'm an avid photographer, capturing the beauty of the world through my lens. This attention to detail translates into my development work, ensuring clean and visually appealing interfaces.";
+export const PROJECTS_TITLE = "Projects";

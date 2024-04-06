@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 
 import { Heading } from "@components/atoms";
-import { IconAnchor } from '@components/molecules/IconAnchor/IconAnchor.component'
 
 export const StyledHeading = styled(Heading)(({ theme }) => {
   return css`
@@ -22,11 +21,3 @@ export const StyledDescription = styled.p(({ theme }) => {
     line-height: ${theme.measurements.medium};
   `;
 });
-
-export const StyledAnchor = styled(IconAnchor)(({theme}) => {
-	return css`
-		* {
-			color: red;
-		}
-	`
-})
