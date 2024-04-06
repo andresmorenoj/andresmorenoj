@@ -11,7 +11,7 @@ export const Icon: React.FC<IIcon> = ({ iconType, size, color, ...props }) => (
     value={{
       color: color || "black",
       className: "global-icon",
-      size: (size || 20) + 'em',
+      size: (size || 2) + 'em',
     }}
   >
     <i>{iconType(props)}</i>

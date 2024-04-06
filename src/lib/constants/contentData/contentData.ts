@@ -14,7 +14,8 @@ import {
   ABOUT_ME_P1,
   ABOUT_ME_P2,
   ABOUT_ME_P3,
-  ABOUT_ME_P4
+  ABOUT_ME_P4,
+  PROJECTS_TITLE
 } from "./contentData.constants";
 
 enum CONTENT {
@@ -34,6 +35,7 @@ enum CONTENT {
   ABOUT_ME_2 = ABOUT_ME_P2,
   ABOUT_ME_3 = ABOUT_ME_P3,
   ABOUT_ME_4 = ABOUT_ME_P4,
+  PROJECTS = PROJECTS_TITLE
 }
 
 const keys = [
@@ -52,7 +54,8 @@ const keys = [
   "about_me_p1",
   "about_me_p2",
   "about_me_p3",
-  "about_me_p4"
+  "about_me_p4",
+  "projects"
 ] as const;
 
 type TValidContentKey = (typeof keys)[number];
@@ -114,5 +117,7 @@ export const contentData: TContent = {
   about_me_p4: {
     content: CONTENT.ABOUT_ME_4
   },
-
+  projects: {
+    content: CONTENT.PROJECTS
+  }
 };
