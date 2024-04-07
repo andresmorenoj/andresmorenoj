@@ -20,3 +20,9 @@ export const ABOUT_ME_P3 =
 export const ABOUT_ME_P4 =
   "Outside of code, I'm an avid photographer, capturing the beauty of the world through my lens. This attention to detail translates into my development work, ensuring clean and visually appealing interfaces.";
 export const PROJECTS_TITLE = "Projects";
+export const READY_TITLE = "Ready to";
+export const CRAFT_TITLE = "Craft";
+export const ENGAGING_TITLE = "Engaging UI's?";
+export const CONTACT_ME_TITLE = "Contact Me!";
+export const CONTACT_ME_DESCRIPTION =
+  "I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.";

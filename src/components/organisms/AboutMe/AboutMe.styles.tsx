@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { ImageFigure } from "@components/atoms";
+import { Paragraph } from "@components/atoms";
 
 export const StyledSectionContainer = styled.section(({ theme }) => {
   return css`
@@ -36,9 +36,8 @@ export const StyledTextsWrapper = styled.div(({ theme }) => {
   `;
 });
 
-export const StyledParagraph = styled.p(({ theme }) => {
+export const StyledParagraph = styled(Paragraph)(({ theme }) => {
   return css`
-    color: ${theme.colors.secondary.zinc500};
     padding: ${theme.measurements.zero};
     margin: ${theme.measurements.zero};
   `;
