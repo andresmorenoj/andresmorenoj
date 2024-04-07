@@ -6,7 +6,7 @@ import { ProjectCard } from "@components/molecules";
 import {
   StyledSectionContainer,
   StyledCardContainer,
-  StyledListItem
+  StyledListItem,
 } from "./MyProjects.styles";
 
 export const MyProjects: React.FC = () => {
@@ -19,17 +19,22 @@ export const MyProjects: React.FC = () => {
         <Text variant="bold">{contentData.projects.content}</Text>
       </Heading>
       <StyledCardContainer>
-        {cardsData.map((item, index) => (
-          <StyledListItem key={item.title}>
-            <ProjectCard
-              indexTitle={(index + 1).toString()}
-              title={item.title}
-              description={item.description}
-              href={item.href}
-              imgUrl={item.imgUrl}
-            />
-          </StyledListItem>
-        ))}
+        {cardsData.map((item, index) => {
+          const baseIndex = index + 1;
+          const transformedIndex =
+            index < 10 ? `0${baseIndex}` : `${baseIndex}`;
+          return (
+            <StyledListItem key={item.title}>
+              <ProjectCard
+                indexTitle={transformedIndex}
+                title={item.title}
+                description={item.description}
+                href={item.href}
+                imgUrl={item.imgUrl}
+              />
+            </StyledListItem>
+          );
+        })}
       </StyledCardContainer>
     </StyledSectionContainer>
   );
