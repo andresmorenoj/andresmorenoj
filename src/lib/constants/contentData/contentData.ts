@@ -15,7 +15,12 @@ import {
   ABOUT_ME_P2,
   ABOUT_ME_P3,
   ABOUT_ME_P4,
-  PROJECTS_TITLE
+  PROJECTS_TITLE,
+  READY_TITLE,
+  CRAFT_TITLE,
+  ENGAGING_TITLE,
+  CONTACT_ME_TITLE,
+  CONTACT_ME_DESCRIPTION
 } from "./contentData.constants";
 
 enum CONTENT {
@@ -35,7 +40,12 @@ enum CONTENT {
   ABOUT_ME_2 = ABOUT_ME_P2,
   ABOUT_ME_3 = ABOUT_ME_P3,
   ABOUT_ME_4 = ABOUT_ME_P4,
-  PROJECTS = PROJECTS_TITLE
+  PROJECTS = PROJECTS_TITLE,
+  READY = READY_TITLE,
+  CRATF = CRAFT_TITLE,
+  ENGAGING = ENGAGING_TITLE,
+  CONTACT_TITLE = CONTACT_ME_TITLE,
+  CONTACT_DESCRIPTION = CONTACT_ME_DESCRIPTION 
 }
 
 const keys = [
@@ -55,7 +65,12 @@ const keys = [
   "about_me_p2",
   "about_me_p3",
   "about_me_p4",
-  "projects"
+  "projects",
+  "ready",
+  "craft",
+  "engaging",
+  "contact_title",
+  "contact_description"
 ] as const;
 
 type TValidContentKey = (typeof keys)[number];
@@ -119,5 +134,20 @@ export const contentData: TContent = {
   },
   projects: {
     content: CONTENT.PROJECTS
+  },
+  ready: {
+    content: CONTENT.READY
+  },
+  craft: {
+    content: CONTENT.CRATF
+  },
+  engaging: {
+    content: CONTENT.ENGAGING
+  },
+  contact_title: {
+    content: CONTENT.CONTACT_TITLE
+  },
+  contact_description: {
+    content: CONTENT.CONTACT_DESCRIPTION
   }
 };

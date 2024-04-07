@@ -13,11 +13,5 @@ export const StyledContainer = styled.div<Pick<ITextsContent, "variant">>(
         ? theme.colors.primary.neutralBlack
         : theme.colors.primary.neutralWhite};
     }
-
-    & .container__description {
-      font-size: ${theme.typography.sizes.medium};
-      color: ${theme.colors.secondary.zinc500};
-      line-height: ${theme.measurements.medium};
-    }
   `
 );

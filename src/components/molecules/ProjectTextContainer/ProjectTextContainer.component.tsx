@@ -1,7 +1,7 @@
 import { TbExternalLink } from "react-icons/tb";
 import { theme } from "@theme/theme.main";
 
-import { Text } from "@components/atoms";
+import { Paragraph, Text } from "@components/atoms";
 import { IconAnchor } from '@components/molecules/IconAnchor/IconAnchor.component'
 
 import {
@@ -11,7 +11,6 @@ import {
 
 import {
   StyledHeading,
-  StyledDescription,
 } from "./ProjectTextContainer.styles";
 
 interface IProjectTextContent extends Omit<ITextsContent, "variant"> {
@@ -37,12 +36,11 @@ export const ProjectTextContainer: React.FC<IProjectTextContent> = ({
         }
         description={
           <>
-            <StyledDescription className=".container__description">
+            <Paragraph>
               <Text variant="normal">{description}</Text>
-            </StyledDescription>
+            </Paragraph>
             <IconAnchor
               href={href}
-              isDarkBackgound={true}
               useIconCard={false}
               variant="default"
               icon={TbExternalLink}

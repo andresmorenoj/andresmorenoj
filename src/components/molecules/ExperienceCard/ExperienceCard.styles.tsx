@@ -37,11 +37,3 @@ export const StyledHeadingWithIcon = styled.div(({ theme }) => {
     gap: ${theme.measurements.large};
   `;
 });
-
-
-export const StyledDescription = styled.p(({ theme }) => {
-  return css`
-    color: ${theme.colors.secondary.zinc300};
-    line-height: ${theme.measurements.medium};
-  `;
-});

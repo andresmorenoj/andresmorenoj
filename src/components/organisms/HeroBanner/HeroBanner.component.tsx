@@ -1,10 +1,10 @@
 import { contentData } from "@constants/index";
 
 import { TextsContentContainer } from "@components/molecules";
-import { Heading, Text, ImageFigure } from "@components/atoms";
+import { Heading, Text, ImageFigure, Paragraph } from "@components/atoms";
 
 import { StyledSectionContainer } from "./HeroBanner.styles";
-import { Contact } from "..";
+import { ContactItems } from "@components/molecules";
 
 export const HeroBanner: React.FC = () => (
   <StyledSectionContainer>
@@ -32,13 +32,13 @@ export const HeroBanner: React.FC = () => (
         </Heading>
       }
       description={
-        <p className="container__description">
+        <Paragraph color={"zinc500"}>
           <Text variant="normal">{`${contentData.short_description.content}`}</Text>
-        </p>
+        </Paragraph>
       }
     />
     <ImageFigure src="/images/man.svg" width={100} />
-    <Contact/>
+    <ContactItems/>
   </StyledSectionContainer>
 );
  

@@ -5,9 +5,8 @@ import {
   StyledItemContainer,
   StyledHeadingWrapper,
   StyledHeadingWithIcon,
-	StyledDescription
 } from "./ExperienceCard.styles";
-import { Heading, Icon, Text} from "@components/atoms";
+import { Heading, Icon, Paragraph, Text} from "@components/atoms";
 
 export const ExperienceCard: React.FC<INewExperienceData> = ({
   title,
@@ -27,7 +26,7 @@ export const ExperienceCard: React.FC<INewExperienceData> = ({
         </StyledHeadingWithIcon>
         <Text variant="semiBold">{`${fromDate} - ${toDate}`}</Text>
       </StyledHeadingWrapper>
-      <StyledDescription>{description}</StyledDescription>
+      <Paragraph>{description}</Paragraph>
     </StyledItemContainer>
   );
 };
