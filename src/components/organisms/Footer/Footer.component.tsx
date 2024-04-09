@@ -16,9 +16,9 @@ export const Footer: React.FC = () => (
 			</Heading>
 		}
 		description={
-			<Paragraph>
-				<Text variant="normal">{`${contentData.job.content}`}</Text>
-				<Text variant="normal">{`${contentData.job_title.content}`}</Text>
+			<Paragraph color="zinc500">
+				<Text variant="normal">{`${contentData.job.content} `}</Text>
+				<Text variant="semiBold">{`${contentData.job_title.content}`}</Text>
 			</Paragraph>
 		}
 		/>
