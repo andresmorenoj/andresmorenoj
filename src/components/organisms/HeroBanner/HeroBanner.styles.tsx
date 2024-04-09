@@ -1,18 +1,21 @@
 import styled, { css } from "styled-components";
 
-export const StyledSectionContainer = styled.section(({theme}) => {
+import { withMultipleOf } from "@theme/baseTheme/mixins";
+
+export const StyledSectionContainer = styled.section(({ theme }) => {
   return css`
+    width: 100%;
+    height: auto;
+    padding: 0 ${withMultipleOf("medium", 4)};
+
     display: grid;
     grid-template-columns: 55% 45%;
     align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 0 90px;
     box-sizing: border-box;
     row-gap: ${theme.measurements.large};
 
     figure {
-      align-self: start;
+      justify-self: center;
 
       grid-row-start: 1;
       grid-row-end: 3;

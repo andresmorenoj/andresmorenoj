@@ -1,8 +1,9 @@
+import { withMultipleOf } from "@theme/baseTheme/mixins";
 import styled, { css } from "styled-components";
 
 export const StyledSectionContainer = styled.section(({ theme }) => {
   return css`
-    padding: 0 90px;
+    padding: ${theme.measurements.extraExtraLarge} ${withMultipleOf('medium', 4)};
 
     display: grid;
     grid-template-columns: 1fr;

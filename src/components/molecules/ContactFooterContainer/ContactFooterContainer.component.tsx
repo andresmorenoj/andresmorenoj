@@ -23,7 +23,7 @@ export const ContactFooterContainer: React.FC = () => {
           </>
         }
         description={
-          <Paragraph>
+          <Paragraph color="zinc500">
             <Text variant="normal">{`${contentData.contact_description.content}`}</Text>
           </Paragraph>
         }
