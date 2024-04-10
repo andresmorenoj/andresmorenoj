@@ -1,5 +1,5 @@
 export const INTRODUCTION_GREET = "Hello, I'am";
-export const INTRODUCTION_NAME = "Andrés Moreno.";
+export const INTRODUCTION_NAME = "Andrés Moreno";
 export const INTRODUCTION_JOB = "Web UI";
 export const INTRODUCTION_JOB_TITLE = "Developer";
 export const INTRODUCTION_LOCATION = "Base in";

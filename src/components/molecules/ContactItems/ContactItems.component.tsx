@@ -7,7 +7,7 @@ import { StyledContactContainer } from './ContactItems.styles';
 
 export const ContactItems: React.FC = () => {
   const contactValues = Object.values(contactData);
-  const icons = [FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp];
+  const icons = [FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram];
 
   return (
     <StyledContactContainer>
