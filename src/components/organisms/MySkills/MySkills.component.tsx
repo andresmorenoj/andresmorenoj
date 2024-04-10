@@ -11,7 +11,7 @@ import {
 } from "react-icons/si";
 import { RxAccessibility } from "react-icons/rx";
 
-import { contentData, skillsData } from "@constants/index";
+import { contentData, skillsData, sectionsData } from "@constants/index";
 
 import { Heading, Text } from "@components/atoms";
 import { IconCard } from "@components/molecules";
@@ -38,7 +38,7 @@ export const MySkills: React.FC = () => {
 const skills = Object.values(skillsData);
 
   return (
-    <StyledSectionContainer>
+    <StyledSectionContainer id={sectionsData.skills.sectionRef}>
       <Heading level={2} size="extraJumbo">
         <Text variant="normal">{`${contentData.pre_my.content} `}</Text>
         <Text variant="bold">{contentData.skills.content}</Text>

@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
         <StyledNavList>
           {navigationList.map((item) => (
             <li key={item.sectionRef}>
-              <MenuItem label={item.label} sectionRef={item.sectionRef} />
+              <MenuItem label={item.label} sectionRef={`#${item.sectionRef}`} />
             </li>
           ))}
         </StyledNavList>

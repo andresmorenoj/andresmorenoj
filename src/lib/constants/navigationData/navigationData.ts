@@ -26,18 +26,18 @@ type TNavigation = {
 export const sectionsData: TNavigation = {
 	aboutMe: {
 		label: NAVIGATION.ABOUTME,
-		sectionRef: '#aboutMe'
+		sectionRef: 'aboutMe'
 	},
 	skills: {
 		label: NAVIGATION.SKILLS,
-		sectionRef: '#skills'
+		sectionRef: 'skills'
 	},
 	myExperience: {
 		label: NAVIGATION.EXPERIENCE,
-		sectionRef: '#experience'
+		sectionRef: 'experience'
 	},
 	myProjects: {
 		label: NAVIGATION.PROJECTS,
-		sectionRef: '#projects'
+		sectionRef: 'projects'
 	}
 };
