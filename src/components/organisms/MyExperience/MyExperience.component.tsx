@@ -1,4 +1,4 @@
-import { contentData, experienceData } from "@constants/index";
+import { contentData, experienceData, sectionsData } from "@constants/index";
 
 import { Heading, Text } from "@components/atoms";
 import { ExperienceCard } from "@components/molecules";
@@ -12,7 +12,7 @@ export const MyExperience: React.FC = () => {
   const cardData = Object.values(experienceData);
 
   return (
-    <StyledSectionContainer>
+    <StyledSectionContainer id={sectionsData.myExperience.sectionRef}>
       <Heading level={2} size="extraJumbo">
         <Text variant="normal">{`${contentData.pre_my.content} `}</Text>
         <Text variant="bold">{contentData.experience.content}</Text>

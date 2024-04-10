@@ -1,5 +1,5 @@
 import { Heading, Text, ImageFigure } from "@components/atoms";
-import { contentData } from "lib";
+import {contentData, sectionsData } from "@constants/index";
 import {
   StyledSectionContainer,
   StyledTextsWrapper,
@@ -7,7 +7,7 @@ import {
 } from "./AboutMe.styles";
 
 export const AboutMe: React.FC = () => (
-  <StyledSectionContainer>
+  <StyledSectionContainer id={sectionsData.aboutMe.sectionRef}>
 		<ImageFigure src="/images/man2.svg" width={100}/>
     <StyledTextsWrapper>
       <Heading level={2} size="extraJumbo">
