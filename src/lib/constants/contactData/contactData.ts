@@ -35,12 +35,12 @@ export const contactData: TContact = {
     label: "Github",
     href: CONTACT.GITHUB,
   },
+  whatsapp: {
+    label: "Whatsapp",
+    href: `${CONTACT.WHATSAPP}${getWhatsappMessage(WHATSAPP_MESSAGE)}`
+  },
   instagram: {
     label: "Instagram",
     href: CONTACT.INSTAGRAM,
-  },
-	whatsapp: {
-		label: "Whatsapp",
-		href: `${CONTACT.WHATSAPP}${getWhatsappMessage(WHATSAPP_MESSAGE)}`
-	}
+  }
 };

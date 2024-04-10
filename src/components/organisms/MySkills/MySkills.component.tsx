@@ -19,6 +19,7 @@ import { IconCard } from "@components/molecules";
 import {
   StyledSectionContainer,
   StyledCardsContainer,
+  StyledListItem,
 } from "./MySkills.styles";
 
 export const MySkills: React.FC = () => {
@@ -32,10 +33,10 @@ export const MySkills: React.FC = () => {
     SiGit,
     SiStorybook,
     SiJest,
-		RxAccessibility
+    RxAccessibility,
   ];
 
-const skills = Object.values(skillsData);
+  const skills = Object.values(skillsData);
 
   return (
     <StyledSectionContainer id={sectionsData.skills.sectionRef}>
@@ -44,14 +45,16 @@ const skills = Object.values(skillsData);
         <Text variant="bold">{contentData.skills.content}</Text>
       </Heading>
       <StyledCardsContainer>
-				{
-					skills.map((skill, index) => (
-						<li key={skill.label}>
-							<IconCard icon={icons[index]} variant="withLabel" label={skill.label}/>
-						</li>
-					))
-				}
-			</StyledCardsContainer>
+        {skills.map((skill, index) => (
+          <StyledListItem key={skill.label}>
+            <IconCard
+              icon={icons[index]}
+              variant="withLabel"
+              label={skill.label}
+            />
+          </StyledListItem>
+        ))}
+      </StyledCardsContainer>
     </StyledSectionContainer>
   );
 };

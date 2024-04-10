@@ -19,7 +19,7 @@ export const HeroBanner: React.FC = () => (
         >
           <Text variant="normal">{`${contentData.greet.content} `}</Text>
           <Text variant="semiBold">
-            {`${contentData.name.content}`}
+            {`${contentData.name.content}.`}
             <br />
           </Text>
           <Text variant="semiBold">{`${contentData.job.content} `}</Text>
