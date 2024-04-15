@@ -2,7 +2,7 @@ import { Icon } from "@components/atoms/Icon/Icon.component";
 import {
   IconCard,
   IIConCard,
-} from "@components/molecules/IconCard/IconCard.component";
+} from "@components/atoms";
 
 import { StyledIconAnchor } from "./IconAnchor.styles";
 import { RenderIf } from "@components/hoc";

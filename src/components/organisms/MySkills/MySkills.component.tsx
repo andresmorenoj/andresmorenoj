@@ -14,7 +14,7 @@ import { RxAccessibility } from "react-icons/rx";
 import { contentData, skillsData, sectionsData } from "@constants/index";
 
 import { Heading, Text } from "@components/atoms";
-import { IconCard } from "@components/molecules";
+import { IconCard } from "@components/atoms";
 
 import {
   StyledSectionContainer,
