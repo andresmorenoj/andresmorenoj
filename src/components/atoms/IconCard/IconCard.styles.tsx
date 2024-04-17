@@ -6,13 +6,18 @@ import {
   withBorder,
   withBorderRadius,
 } from "@theme/baseTheme/mixins";
+import { getMedia } from "@utils/index";
 
 const variantStyles = (theme: DefaultTheme, variant: TVariant) => {
   if (variant === "default") {
     return css`
-      padding: calc(
-        ${theme.measurements.medium} - ${theme.measurements.extraExtraSmall}
-      );
+      padding: ${theme.measurements.extraSmall};
+
+      @media ${getMedia("mobileFirst", "medium")} {
+        padding: calc(
+          ${theme.measurements.medium} - ${theme.measurements.extraExtraSmall}
+        );
+      }
     `;
   } else {
     return css`
@@ -30,7 +35,7 @@ const variantStyles = (theme: DefaultTheme, variant: TVariant) => {
 export const StyledWrapper = styled.div<Omit<IIConCard, "icon">>(
   ({ theme, variant }) => {
     return css`
-    background: ${theme.colors.primary.neutralWhite};
+      background: ${theme.colors.primary.neutralWhite};
       ${withFlexContentCentered()};
       ${withBorder(theme.colors.primary.neutralBlack, "2px")};
       ${withBorderRadius(theme.measurements.extraSmall)};
