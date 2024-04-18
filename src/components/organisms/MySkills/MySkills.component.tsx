@@ -21,8 +21,11 @@ import {
   StyledCardsContainer,
   StyledListItem,
 } from "./MySkills.styles";
+import { useHeadingSize, useScreenSize } from "@hooks/index";
 
 export const MySkills: React.FC = () => {
+  const { isLargeScreen, isMediumScreen } = useScreenSize();
+
   const icons = [
     SiTypescript,
     SiReact,
@@ -37,10 +40,11 @@ export const MySkills: React.FC = () => {
   ];
 
   const skills = Object.values(skillsData);
+  const headingSize = useHeadingSize();
 
   return (
     <StyledSectionContainer id={sectionsData.skills.sectionRef}>
-      <Heading level={2} size="extraJumbo">
+      <Heading level={2} size={headingSize}>
         <Text variant="normal">{`${contentData.pre_my.content} `}</Text>
         <Text variant="bold">{contentData.skills.content}</Text>
       </Heading>
