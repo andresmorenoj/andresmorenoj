@@ -15,11 +15,13 @@ import {
 
 export const HeroBanner: React.FC = () => {
   const { isLargeScreen, isMediumScreen } = useScreenSize();
-  const setHeadingSize = isLargeScreen
+
+  const headingSize = isLargeScreen
     ? "extraJumbo"
     : isMediumScreen
     ? "jumbo"
     : "large";
+
   return (
     <StyledSectionContainer>
       <TextsContentContainer
@@ -28,7 +30,7 @@ export const HeroBanner: React.FC = () => {
           <Heading
             className="container__title"
             level={1}
-            size={setHeadingSize}
+            size={headingSize}
             fontWeight="extraBold"
           >
             <Text variant="normal">{`${contentData.greet.content} `}</Text>
@@ -37,7 +39,7 @@ export const HeroBanner: React.FC = () => {
               <br />
             </Text>
             <Text variant="semiBold">{`${contentData.job.content} `}</Text>
-            <Text variant="outline" >
+            <Text variant="outline">
               {`${contentData.job_title.content}`}
               <br />
             </Text>
