@@ -11,7 +11,7 @@ export const useHeadingSize = () => {
     ? "extraJumbo"
     : isMediumScreen
     ? "jumbo"
-    : "large";
+    : "extraLarge";
 
   useEffect(() => {
     setHeadingSize(size);

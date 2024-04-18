@@ -21,13 +21,22 @@ const variantStyles = (theme: DefaultTheme, variant: TVariant) => {
     `;
   } else {
     return css`
-      width: 200px;
-      max-width: 300px;
-      height: 200px;
+      width: 100%;
+      max-width: 150px;
+      padding-block: ${theme.measurements.large};
 
       flex-direction: column;
       justify-self: center;
       gap: ${theme.measurements.medium};
+
+      @media ${getMedia('mobileFirst', 'medium')} {
+        max-width: 200px;
+        padding-block: ${theme.measurements.large};
+      }
+
+      @media ${getMedia('mobileFirst', 'large')} {
+        max-width: 300px;
+      }
     `;
   }
 };

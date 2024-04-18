@@ -3,7 +3,7 @@ import { contentData } from "@constants/index";
 import { TextsContentContainer } from "@components/molecules";
 import { Heading, Text, ImageFigure, Paragraph } from "@components/atoms";
 
-import { useHeadingSize } from "@hooks/index";
+import { useScreenSize } from "@hooks/index";
 
 import { ContactItems } from "@components/molecules";
 
@@ -14,7 +14,14 @@ import {
 } from "./HeroBanner.styles";
 
 export const HeroBanner: React.FC = () => {
-  const headingSize = useHeadingSize();
+  const { isLargeScreen, isMediumScreen } = useScreenSize();
+
+  const headingSize = isLargeScreen
+    ? "extraJumbo"
+    : isMediumScreen
+    ? "jumbo"
+    : "large";
+
   return (
     <StyledSectionContainer>
       <TextsContentContainer
@@ -32,7 +39,7 @@ export const HeroBanner: React.FC = () => {
               <br />
             </Text>
             <Text variant="semiBold">{`${contentData.job.content} `}</Text>
-            <Text variant="outline" >
+            <Text variant="outline">
               {`${contentData.job_title.content}`}
               <br />
             </Text>
