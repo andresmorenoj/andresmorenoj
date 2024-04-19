@@ -5,7 +5,7 @@ import { getMedia } from "@utils/index";
 
 export const StyledSectionContainer = styled.section(({ theme }) => {
   return css`
-    padding: 0 ${theme.measurements.medium};
+    padding: 0 ${theme.measurements.small};
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -15,9 +15,13 @@ export const StyledSectionContainer = styled.section(({ theme }) => {
       justify-self: center;
     }
 
+    @media ${getMedia("mobileFirst", "medium")} {
+      padding-inline: ${theme.measurements.large};
+    }
+
     @media ${getMedia("mobileFirst", "large")} {
       gap: ${theme.measurements.extraExtraLarge};
-      padding: 0 ${withMultipleOf("medium", 4)};
+      padding-inline: ${withMultipleOf("medium", 4)};
     }
   `;
 });
@@ -43,6 +47,5 @@ export const StyledListItem = styled.li(() => {
   return css`
     display: grid;
     width: 100%;
-    // max-width: 50px;
   `;
 });
