@@ -7,7 +7,7 @@ export const StyledSectionContainer = styled.section(({ theme }) => {
   return css`
     width: 100%;
     height: auto;
-    padding: 0 ${theme.measurements.medium};
+    padding: 0 ${theme.measurements.small};
     box-sizing: border-box;
 
     display: grid;
@@ -15,9 +15,10 @@ export const StyledSectionContainer = styled.section(({ theme }) => {
     align-items: center;
     row-gap: ${theme.measurements.extraLarge};
     
+    @media ${getMedia("mobileFirst", "medium")} {
+      padding-inline: ${theme.measurements.medium};
+    }
     @media ${getMedia("mobileFirst", "large")} {
-      padding: 0 ${withMultipleOf("medium", 4)};
-
       grid-template-columns: 55% 45%;
       row-gap: ${theme.measurements.extraLarge};
     }

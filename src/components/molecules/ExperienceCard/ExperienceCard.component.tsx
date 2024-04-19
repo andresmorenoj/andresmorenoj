@@ -6,7 +6,8 @@ import {
   StyledHeadingWrapper,
   StyledHeadingWithIcon,
 } from "./ExperienceCard.styles";
-import { Heading, Icon, Paragraph, Text} from "@components/atoms";
+import { Heading, Icon, Paragraph, Text, THeadingSize } from "@components/atoms";
+import { useScreenSize } from "@hooks/index";
 
 export const ExperienceCard: React.FC<INewExperienceData> = ({
   title,
@@ -14,13 +15,19 @@ export const ExperienceCard: React.FC<INewExperienceData> = ({
   toDate,
   description,
 }) => {
+  const { isLargeScreen, isMediumScreen } = useScreenSize();
+  const headingSize: THeadingSize = isLargeScreen
+    ? "extraLarge"
+    : isMediumScreen
+    ? "large"
+    : "medium";
 
   return (
     <StyledItemContainer>
       <StyledHeadingWrapper>
         <StyledHeadingWithIcon>
           <Icon iconType={BsFillBuildingsFill} size={2} />
-          <Heading level={3} size="extraLarge" fontWeight="extraBold">
+          <Heading level={3} size={headingSize} fontWeight="extraBold">
             {title}
           </Heading>
         </StyledHeadingWithIcon>
