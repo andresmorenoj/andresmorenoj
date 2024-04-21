@@ -1,21 +1,33 @@
 import styled, { css } from "styled-components";
 
 import { withMultipleOf } from "@theme/baseTheme/mixins";
+import { getMedia } from "@utils/index";
 
 export const StyledSectionContainer = styled.section(({ theme }) => {
   return css`
-  padding: ${theme.measurements.extraExtraLarge} ${withMultipleOf("medium", 3)};
+    padding-block: ${theme.measurements.extraLarge};
+    padding-inline: ${theme.measurements.small};
 
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: ${theme.measurements.extraExtraLarge};
+    gap: ${theme.measurements.extraLarge};
 
-		background: ${theme.colors.primary.neutralBlack};
+    background: ${theme.colors.primary.neutralBlack};
 
     h2 {
       justify-self: center;
-			color: ${theme.colors.primary.neutralWhite};
+      color: ${theme.colors.primary.neutralWhite};
+    }
+
+    @media ${getMedia("mobileFirst", "medium")} {
+      padding-inline: ${theme.measurements.medium};
+      gap: ${withMultipleOf("medium", 3)};
+    }
+
+    @media ${getMedia("mobileFirst", "large")} {
+      padding-inline: ${withMultipleOf("medium", 3)};
+      gap: ${withMultipleOf("medium", 5)};
     }
   `;
 });
@@ -30,11 +42,13 @@ export const StyledCardContainer = styled.ol(({ theme }) => {
     padding: 0;
     margin: 0;
 
-    & li:nth-child(even) {
-      article {
-        > :first-child {
-          order: 2;
-          justify-self: end;
+    @media ${getMedia("mobileFirst", "large")} {
+      & li:nth-child(even) {
+        article {
+          > :first-child {
+            order: 2;
+            justify-self: end;
+          }
         }
       }
     }
@@ -43,6 +57,6 @@ export const StyledCardContainer = styled.ol(({ theme }) => {
 
 export const StyledListItem = styled.li(() => {
   return css`
-    max-width: 90%;
-  `
-})
+    width: 100%;
+  `;
+});
