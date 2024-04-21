@@ -1,5 +1,7 @@
 import { contentData, projectsData, sectionsData } from "@constants/index";
 
+import { useHeadingSize } from "@hooks/index";
+
 import { Heading, Text } from "@components/atoms";
 import { ProjectCard } from "@components/molecules";
 
@@ -10,11 +12,12 @@ import {
 } from "./MyProjects.styles";
 
 export const MyProjects: React.FC = () => {
+  const headingSize = useHeadingSize();
   const cardsData = Object.values(projectsData);
 
   return (
     <StyledSectionContainer id={sectionsData.myProjects.sectionRef}>
-      <Heading level={2} size="extraJumbo">
+      <Heading level={2} size={headingSize}>
         <Text variant="normal">{`${contentData.pre_my.content} `}</Text>
         <Text variant="bold">{contentData.projects.content}</Text>
       </Heading>

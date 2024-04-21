@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { Heading } from "@components/atoms";
+import { getMedia } from "@utils/index";
 
 export const StyledHeading = styled(Heading)(({ theme }) => {
   return css`
@@ -10,7 +11,15 @@ export const StyledHeading = styled(Heading)(({ theme }) => {
 		
 		span:first-child {
 			line-height: ${theme.measurements.zero};
-			font-size: ${theme.typography.sizes.extraJumbo}
+			font-size: ${theme.typography.sizes.extraExtraLarge};
+
+      @media ${getMedia('mobileFirst', 'medium')} {
+        font-size: ${theme.typography.sizes.jumbo}
+      }
+
+      @media ${getMedia('mobileFirst', 'large')} {
+        font-size: ${theme.typography.sizes.extraJumbo}
+      }
 		}
   `;
 });
