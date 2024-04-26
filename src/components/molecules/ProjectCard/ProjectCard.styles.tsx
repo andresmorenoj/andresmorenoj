@@ -8,7 +8,7 @@ export const StyledCardContainer = styled.article(({ theme }) => {
     margin: 0 auto;
 
     display: grid;
-    
+
     grid-template-columns: 1fr;
     align-items: center;
     gap: ${theme.measurements.large};
@@ -18,27 +18,27 @@ export const StyledCardContainer = styled.article(({ theme }) => {
     }
 
     img {
-      -webkit-box-shadow: 0px 0px 30px -6px ${theme.colors.secondary.zinc300};
-      -moz-box-shadow: 0px 0px 30px -6px ${theme.colors.secondary.zinc300};
-      box-shadow: 0px 0px 30px -6px ${theme.colors.secondary.zinc300};
+      -webkit-box-shadow: 0px 0px 0px 6px rgba(212, 212, 216, 1);
+      -moz-box-shadow: 0px 0px 0px 6px rgba(212, 212, 216, 1);
+      box-shadow: 0px 0px 0px 6px rgba(212, 212, 216, 1);
       background: ${theme.colors.primary.neutralWhite};
 
       ${withBorderRadius(theme.measurements.extraSmall)};
-      
-      @media ${getMedia('mobileFirst', 'medium')} {
+
+      @media ${getMedia("mobileFirst", "medium")} {
         ${withBorderRadius(theme.measurements.small)};
       }
 
-      @media ${getMedia('mobileFirst', 'large')} {
+      @media ${getMedia("mobileFirst", "large")} {
         ${withBorderRadius(theme.measurements.medium)};
       }
     }
 
-    @media ${getMedia('mobileFirst', 'medium')} {
+    @media ${getMedia("mobileFirst", "medium")} {
       gap: ${theme.measurements.extraLarge};
     }
 
-    @media ${getMedia('mobileFirst', 'large')} {
+    @media ${getMedia("mobileFirst", "large")} {
       grid-template-columns: repeat(2, 1fr);
       gap: ${theme.measurements.extraExtraLarge};
     }
