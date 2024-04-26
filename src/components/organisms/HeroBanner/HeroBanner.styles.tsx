@@ -19,6 +19,7 @@ export const StyledSectionContainer = styled.section(({ theme }) => {
       padding-inline: ${theme.measurements.medium};
     }
     @media ${getMedia("mobileFirst", "large")} {
+      padding-inline: ${withMultipleOf("medium", 3)};
       grid-template-columns: 55% 45%;
       row-gap: ${theme.measurements.extraLarge};
     }
