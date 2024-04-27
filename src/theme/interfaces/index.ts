@@ -13,4 +13,4 @@ declare module 'styled-components' {
 }
 
 export * from './ITheme';
-export default DefaultTheme;
+export type { DefaultTheme as default }
