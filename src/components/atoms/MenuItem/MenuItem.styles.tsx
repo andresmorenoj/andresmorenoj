@@ -10,5 +10,10 @@ export const StyledMenuItem = styled(Link)(({ theme }) => {
 			color: ${theme.colors.primary.neutral};
 			text-decoration: underline;
 		}
+
+		&:focus {
+			outline: 2px solid ${theme.colors.secondary.zinc800};
+			outline-offset: ${theme.measurements.extraSmall};
+		}
 	`;
 });

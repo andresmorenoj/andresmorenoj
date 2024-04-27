@@ -4,3 +4,4 @@ export * from './contactData/contactData';
 export * from './skillsData/skillsData';
 export * from './experienceData/experienceData';
 export * from './projectsData/projectsData';
+export * from './mediaQueries/mediaQueries.constants'

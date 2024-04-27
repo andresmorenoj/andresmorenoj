@@ -12,9 +12,10 @@ import {
 import { RxAccessibility } from "react-icons/rx";
 
 import { contentData, skillsData, sectionsData } from "@constants/index";
+import { useHeadingSize } from "@hooks/index";
 
 import { Heading, Text } from "@components/atoms";
-import { IconCard } from "@components/molecules";
+import { IconCard } from "@components/atoms";
 
 import {
   StyledSectionContainer,
@@ -23,6 +24,8 @@ import {
 } from "./MySkills.styles";
 
 export const MySkills: React.FC = () => {
+  const headingSize = useHeadingSize();
+
   const icons = [
     SiTypescript,
     SiReact,
@@ -40,7 +43,7 @@ export const MySkills: React.FC = () => {
 
   return (
     <StyledSectionContainer id={sectionsData.skills.sectionRef}>
-      <Heading level={2} size="extraJumbo">
+      <Heading level={2} size={headingSize}>
         <Text variant="normal">{`${contentData.pre_my.content} `}</Text>
         <Text variant="bold">{contentData.skills.content}</Text>
       </Heading>

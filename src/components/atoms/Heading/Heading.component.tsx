@@ -11,7 +11,7 @@ import {
 
 type THeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 type THeadingWeight = "normal" | "extraBold";
-type THeadingSize =
+export type THeadingSize =
   | "extraSmall"
   | "small"
   | "medium"

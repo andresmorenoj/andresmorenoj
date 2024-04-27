@@ -13,7 +13,7 @@ export const ContactItems: React.FC = () => {
     <StyledContactContainer>
       {contactValues.map((item, index) => (
           <li key={item.label}>
-            <IconAnchor href={item.href} icon={icons[index]} variant="default" />
+            <IconAnchor href={item.href} icon={icons[index]} variant="default" size={50}/>
           </li>
         ))}
     </StyledContactContainer>
